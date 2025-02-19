@@ -1,0 +1,11 @@
+on:
+  schedule:
+  - cron: "0 * * * 1-5"
+
+jobs:
+  build:
+    name: build
+    runs-on: ubuntu-latest
+    steps:
+    - name: npm
+      run: npm install
